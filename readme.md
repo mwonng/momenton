@@ -38,7 +38,7 @@ $ node --version  # check node version
 ```
 this project are develop and test on Node v10.13.0. if you meet any error and please check your node version, please keep node version >= v10.10.0
 
-- [Download Node.js ] (npm will installed within Node.js by default).
+- [Download Node.js ](https://nodejs.org/en/download/) (npm will installed within Node.js by default).
 
 # Install Instruction
 
@@ -49,7 +49,7 @@ to start work with GitHub, you have to had Git installed. I assume you already h
 $ git --version  # check git version
 ```
 
-if not installed, please redirec to [download Git]
+if not installed, please redirec to [download Git](https://git-scm.com/downloads)
 
 ```bash
 $ git clone https://github.com/mwonng/momenton.git.git
