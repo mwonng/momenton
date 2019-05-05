@@ -2,7 +2,6 @@
 Below is employee data of a small company.
 It represents the hierarchical relationship among employees. CEO of the company doesn't have a manager.
 
-
 | Employee Name | id | Manager id |
 | ----- | -----| ----|
 | Alan | 100 | 150 |
@@ -31,18 +30,12 @@ Pay more attention on writing the actual logic of representing the employee tabu
 - Every employee should not have more than one manager
 - Employee could have a empty `manager_id`
 
-
-## Test case
-
-- employee have a manager who is not in this employee table.
-
-- employee have a hierarchy with a valid manager who has a not invalid manager.
-
 # Requirement
 This repo are using Node.js with NPM/Yarn as package manager. Please refer link below for installation.
 
+```bash
 $ node --version  # check node version
-
+```
 this project are develop and test on Node v10.13.0. if you meet any error and please check your node version, please keep node version >= v10.10.0
 
 - [Download Node.js ] (npm will installed within Node.js by default).
@@ -52,21 +45,45 @@ this project are develop and test on Node v10.13.0. if you meet any error and pl
 ## Clone repo
 to start work with GitHub, you have to had Git installed. I assume you already have git installed, but if you don't know, you can check in terminal
 
+```bash
 $ git --version  # check git version
+```
+
 if not installed, please redirec to [download Git]
 
+```bash
 $ git clone https://github.com/mwonng/momenton.git.git
 $ cd robot-node-cli
-
+```
 ## Install dependencies
 
 Install dependencies via package manager.
 
+```bash
 $ npm install
+```
 
 or if you using Yarn.
 
+```bash
 $ yarn
+```
+## Custom your setting:
+
+all setting on `./config/config.js`
+
+- `valid_manager_root_key`: all valid member tree's root name, will using this name as key in the index, this can also show asa label.
+- `valid_key_triggle`: will the valid root show as a label at the top above all valid tree.
+- `valid_tree_start_level`: start indent level form valid tree.
+- `invalid_manager_root_key`: all invalid member tree's root name.
+-`invalid_key_trigger`: will the invalid root show as a label at the top above all valid tree,
+- `invalid_tree_start_leve`: start indent level form valid tree.
+
+## How to run
+
+```bash
+$ node index.js  # or ./index.js
+```
 
 ## Test
 

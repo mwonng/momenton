@@ -7,5 +7,4 @@ const config = {
     invalid_tree_start_leve: 0,
 }
 
-
 module.exports = config;
