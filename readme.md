@@ -14,7 +14,7 @@ It represents the hierarchical relationship among employees. CEO of the company 
 Design a suitable representation of this data. Feel free to choose any database (RDBMS, in- memory database etc), file system or even a data structure like List or Map. Then write code (in any language and framework) that displays the organisation hierarchy as below:
 
 | Jamie | | |
-| ----- | ----- | ---- | ---- |
+| ----- | ----- | ---- |
 | | Alan | |
 | | | Matin |
 | | | Alex |
