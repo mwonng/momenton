@@ -27,19 +27,5 @@
         "id": 190,
         "employee_name": "David",
         "manager_id": 400
-    },
-    {
-        "id": 110,
-        "employee_name": "Michael"
-    },
-    {
-        "id": 111,
-        "employee_name": "Luis",
-        "manager_id": 224
-    },
-    {
-        "id": 121,
-        "employee_name": "Will",
-        "manager_id": 111
     }
 ]

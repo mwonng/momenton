@@ -59,7 +59,6 @@ class Employee {
 
             let vertexChildren = this.index[vertex.id];
             if (vertexChildren !== undefined) {
-                // deep = parent_deep + 1;
                 vertexChildren.forEach( child => {
                     current_stack.push({
                         id: child,

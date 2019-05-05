@@ -37,3 +37,39 @@ Pay more attention on writing the actual logic of representing the employee tabu
 - employee have a manager who is not in this employee table.
 
 - employee have a hierarchy with a valid manager who has a not invalid manager.
+
+# Requirement
+This repo are using Node.js with NPM/Yarn as package manager. Please refer link below for installation.
+
+$ node --version  # check node version
+
+this project are develop and test on Node v10.13.0. if you meet any error and please check your node version, please keep node version >= v10.10.0
+
+- [Download Node.js ] (npm will installed within Node.js by default).
+
+# Install Instruction
+
+## Clone repo
+to start work with GitHub, you have to had Git installed. I assume you already have git installed, but if you don't know, you can check in terminal
+
+$ git --version  # check git version
+if not installed, please redirec to [download Git]
+
+$ git clone https://github.com/mwonng/momenton.git.git
+$ cd robot-node-cli
+
+## Install dependencies
+
+Install dependencies via package manager.
+
+$ npm install
+
+or if you using Yarn.
+
+$ yarn
+
+## Test
+
+```bash
+$ yarn test  #or npm test
+```
