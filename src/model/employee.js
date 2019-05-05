@@ -36,12 +36,14 @@ class Employee {
 
     getRootEmployees(key, start_deep = 0) {
         let result = [];
-        result = this.index[key].map( memberIndex => {
-            return {
-                id: this.findEmployee(memberIndex, this.data).id,
-                deep: start_deep
-            };
-        });
+        if ( this.index[key] !== undefined ) {
+            result = this.index[key].map( memberIndex => {
+                return {
+                    id: this.findEmployee(memberIndex, this.data).id,
+                    deep: start_deep
+                };
+            });
+        }
         return result;
     }
 

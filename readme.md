@@ -79,11 +79,16 @@ all setting on `./config/config.js`
 -`invalid_key_trigger`: will the invalid root show as a label at the top above all valid tree,
 - `invalid_tree_start_leve`: start indent level form valid tree.
 
-## How to run
+## How to start
 
 ```bash
 $ node index.js  # or ./index.js
 ```
+## Result explain
+
+if employee in employees.json has no manager_id info, it will be recongnized as top level employee.
+
+if employee has a manager_id but the manager_id didn't represented by any employee, it will be showing under an invalid group, which default named as "UNKNOWN" but the children employee will still keep the structure.
 
 ## Test
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const printIndent = require('./src/lib/lib');
 const config      = require('./config/config');
 const Employee    = require('./src/model/employee');
@@ -18,7 +20,7 @@ printEmployeeTree(employee, config.invalid_manager_root_key, config.invalid_tree
  *
  */
 function printEmployeeTree(employee, root_key, start_deep = 0, is_key_shown = false) {
-    let roots = employee.index[root_key];
+    let roots = employee.getRootEmployees(root_key);
     let indent = printIndent(start_deep);
 
     if (roots.length > 0) {
