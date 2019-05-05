@@ -1,0 +1,45 @@
+[
+    {
+        "id": 100,
+        "employee_name": "Alan",
+        "manager_id": 150
+    },
+    {
+        "id": 220,
+        "employee_name": "Martin",
+        "manager_id": 100
+    },
+    {
+        "id": 150,
+        "employee_name": "Jamie"
+    },
+    {
+        "id": 275,
+        "employee_name": "Alex",
+        "manager_id": 100
+    },
+    {
+        "id": 400,
+        "employee_name": "Steve",
+        "manager_id": 150
+    },
+    {
+        "id": 190,
+        "employee_name": "David",
+        "manager_id": 400
+    },
+    {
+        "id": 110,
+        "employee_name": "Michael"
+    },
+    {
+        "id": 111,
+        "employee_name": "Luis",
+        "manager_id": 224
+    },
+    {
+        "id": 121,
+        "employee_name": "Will",
+        "manager_id": 111
+    }
+]
