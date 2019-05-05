@@ -4,6 +4,6 @@ const printIndent = (indentDeep) => {
         padding += '\t';
     }
     return padding;
-}
+};
 
 module.exports = printIndent;

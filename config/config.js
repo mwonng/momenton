@@ -5,6 +5,6 @@ const config = {
     invalid_manager_root_key: "UNKNOWN",
     invalid_key_trigger: true,
     invalid_tree_start_leve: 0,
-}
+};
 
 module.exports = config;

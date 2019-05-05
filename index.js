@@ -1,7 +1,7 @@
 const printIndent = require('./src/lib/lib');
-const config = require('./config/config');
-const Employee = require('./src/model/employee');
-const employee = new Employee();
+const config      = require('./config/config');
+const Employee    = require('./src/model/employee');
+const employee    = new Employee();
 
 // print valid employees
 printEmployeeTree(employee, config.valid_manager_root_key, config.valid_tree_start_level, config.valid_key_triggle);

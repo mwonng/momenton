@@ -1,18 +1,18 @@
-const data = require('../../datasource/employees.json');
-const config = require('../../config/config');
+const data        = require('../../datasource/employees.json');
+const config      = require('../../config/config');
 const printIndent = require('../lib/lib');
 
 class Employee {
     constructor() {
-        this.data = data;
+        this.data  = data;
         this.index = this.generateIndex(config.valid_manager_root_key, config.invalid_manager_root_key);
     }
 
-    findEmployee(id){
+    findEmployee(id) {
         return this.data.find( element => element.id === id);
     }
 
-    generateIndex(valid_key, invalid_key){
+    generateIndex(valid_key, invalid_key) {
         let index = {};
         this.data.forEach( elem =>
             {
@@ -25,12 +25,12 @@ class Employee {
 
                 let value = elem.id;
                 if (index[primary] === undefined) {
-                    index[primary] = [value]
+                    index[primary] = [value];
                 } else {
                     index[primary].push(value);
                 }
             }
-        )
+        );
         return index;
     }
 
@@ -40,7 +40,7 @@ class Employee {
             return {
                 id: this.findEmployee(memberIndex, this.data).id,
                 deep: start_deep
-            }
+            };
         });
         return result;
     }
@@ -64,7 +64,7 @@ class Employee {
                         id: child,
                         deep: parent_deep + 1
                     });
-                })
+                });
             }
         }
     }
